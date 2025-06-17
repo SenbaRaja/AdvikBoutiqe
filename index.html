@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advik Boutique</title>
+  <link rel="stylesheet" href="boutique.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <header>
+  <div class="header-content">
+    <div class="logo-frame">
+      <img src="https://img.freepik.com/premium-vector/basic-rgb_260747-400.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt="Advik Boutique Logo" class="logo">
+    </div>
+    <h1 class="brand-name">Advik Boutique</h1>
+  </div>
+</header>
+
+    <nav>
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#gallery"><i class="fas fa-image"></i> Gallery</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <div class="scroll-banner">
+      <div class="scroll-text">
+        💃 Exclusive Saree Offers | New Arrivals | Bridal Collections | Custom Tailoring Available 🎉
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400918.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt="Saree 1">
+      </div>
+      <div class="slide fade">
+        <img src="https://img.freepik.com/free-photo/woman-holding-buta-shape-jewelry-pin_114579-11457.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt Saree 2">
+      </div>
+      <div class="slide fade">
+        <img src="https://img.freepik.com/free-photo/carpets-market-marrakech_23-2148129810.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt="Saree 3">
+      </div>
+    </div>
+
+    <section class="intro-text">
+      <h2>Welcome to Advik Boutique</h2>
+      <p>Where tradition meets trend. Explore our exclusive handcrafted sarees and designer collections.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Advik Boutique. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto slideshow
+    let index = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide() {
+      slides.forEach(slide => slide.style.display = "none");
+      index++;
+      if (index > slides.length) index = 1;
+      slides[index - 1].style.display = "block";
+      setTimeout(showSlide, 3000); // Change image every 3 seconds
+    }
+
+    window.onload = showSlide;
+  </script>
+  <audio autoplay hidden>
+  <source src="soft-bell.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Advik Boutique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <!--<div class="logo">Advik Boutique</div>-->
+  <!--  <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>-->
+  </header>
+
+    <section class="gallery" id="gallery">
+    <h2>Our Collections</h2>
+    <div class="grid">
+      <!-- Replace src with relative paths or hosted image URLs -->
+      <div class="item"><img src="https://img.freepik.com/premium-photo/woman-traditional-dress-holds-up-fan_658385-98.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Elegant Kurti</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400842.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Pastel Saree</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/serious-girl-talking-mobile-phone_1157-1542.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Chic Gown</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/beautiful-young-woman-wearing-sari_23-2149502967.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Ethnic Lehenga</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/attractive-confident-woman-dress-with-bouquet-fresh-flowers_23-2148079380.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Floral Top</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/young-woman-beautiful-red-dress_1303-17506.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Modern Dress</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/young-attractive-indian-woman-traditional-dress-woman-dancing-against-white-background_1157-48166.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Kurthi</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/portrait-beautiful-woman-wearing-traditional-sari-garment_23-2149565112.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Cotton Saree</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400882.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Cotton Lehenga</p></div>
+      <div class="item"><img src="https://img.freepik.com/free-photo/funny-stylish-sexy-smiling-beautiful-young-hippy-woman-model-summer-bright-hipster-clothes-dress-street-hat_158538-10555.jpg?ga=GA1.1.457651146.1749968395&semt=ais_hybrid&w=740" alt=""><p>Suti</p></div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Advik Boutique. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Advik Boutique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+   <!-- <div class="logo">Advik Boutique</div>-->
+  <!--  <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="gallery.html"><i class="fas fa-image"></i> Gallery</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>-->
+  </header>
+
+    <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="map-info">
+      <iframe src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <p>📍 123 Fashion Street, Chennai<br>📞 +91 98765 43210<br>📧 hello@advikboutique.in</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Advik Boutique. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("✅ Your message has been sent successfully!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
